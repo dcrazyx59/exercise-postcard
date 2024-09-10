@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet" />
+		<title>My Postcard project</title>
+	</head>
+	<body>
+		<div class="postcard">
+			<div class="postcard-header">
+				<h1>My Postcard</h1>
+				<img
+					src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
+					alt="4Geeks Logo"
+				/>
+			</div>
+			<div class="postcard-body">
+				<div class="body-left">
+					<p>Look how awesome! This is a</p>
+					<p>postcard that I created using</p>
+					<p>HTML5 and CSS3 during my</p>
+					<p>4Geeks Academy Course!</p>
+					<br />
+					<p>This is so cool, I can't wait to</p>
+					<p>start doing more stuff!</p>
+				</div>
+				<div class="body-right">
+					<form action="/formulario" method="post" id="postcardForm">
+						<input type="text" name="nombre" placeholder="Some Name" />
+						<br />
+						<input type="text" name="email" placeholder="Some Email" />
+						<br />
+						<textarea cols="21" rows="2" name="comentario" placeholder="Some Comment"></textarea>
+						<!-- He añadido espacio extra para poner comentarios más extensos -->
+						<br />
+					</form>
+				</div>
+			</div>
+			<div class="postcard-footer">
+				<button type="submit" form="postcardForm">Send My Postcard</button>
+				<!-- Teóricamente manda los key/values, aparecen en la pestaña de Network/Payload de Chrome como formulario al enviar-->
+			</div>
+		</div>
+	</body>
+</html>

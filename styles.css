@@ -1,0 +1,88 @@
+body {
+	background: black;
+	font-family: "Handlee", cursive;
+	font-weight: 700;
+	font-style: bold;
+}
+
+input,
+textarea,
+button {
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit !important;
+}
+
+.postcard {
+	height: 300px;
+	width: 400px;
+	background-color: white;
+	margin: auto;
+}
+
+.postcard-header {
+	display: flex;
+}
+
+.postcard-header h1 {
+	width: 330px;
+	height: 30px;
+	margin: 0;
+	padding: 10px;
+	padding-top: 25px;
+	font-size: 23px;
+}
+
+.postcard-body {
+	display: flex;
+	width: 400px;
+	padding: 10px;
+}
+
+.body-left p {
+	display: block;
+	margin: 0;
+	width: 190px;
+	font-size: 14px;
+}
+
+.body-right {
+	width: 210px;
+}
+
+.postcard-footer {
+}
+/* No le he podido sacar partido tras crear esta variable de la guía*/
+
+img {
+	height: 60px;
+	width: 60px;
+	padding: 10px;
+}
+
+button {
+	background-color: rgb(170, 170, 170);
+	height: 30px;
+	border: 2px outset;
+	display: flex;
+	text-align: center;
+	line-height: 25px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button:active {
+	background-color: rgb(207, 207, 207);
+	border: none;
+}
+
+input,
+textarea {
+	outline: none;
+	resize: none;
+	width: 175px;
+	border: none;
+	border-bottom: 1px solid gray;
+	padding-bottom: 5px;
+}
